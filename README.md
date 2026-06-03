@@ -77,6 +77,7 @@ Bước 1.2: Màn hình console màu đen sẽ hiện ra -> Bạn hãy dán mã 
 Bước 1.3: Chờ hệ thống tự động thiết lập môi trường ảo (.venv) và tải thư viện. Khi màn hình hiện thông báo [THANH CONG], bạn có thể tắt cửa sổ đó đi.
 
 🔹 2. Quy trình chạy ứng dụng hàng ngày
+
 Bước 2.1: Nhấp đúp chuột vào file run.bat.
 
 Bước 2.2: Hệ thống sẽ khởi động nền tảng Web và tự động mở trình duyệt tại địa chỉ: http://localhost:8501.
@@ -96,6 +97,7 @@ Bước 1.2: Gõ lệnh cd <dấu cách> Kéo và thả thư mục dự án củ
 Bước 1.3: Gõ lệnh trong terminal này và ấn Enter: chmod +x setup_mac.command run_mac.command
 
 🔸 2. Quy trình cài đặt lần đầu
+
 Bước 2.1: Nhấp đúp chuột vào file setup_mac.command.
 
 Bước 2.2: Khi màn hình Terminal hiện yêu cầu nhập Key -> Dán mã GROQ_API_KEY của bạn vào -> Nhấn Enter.
@@ -103,6 +105,7 @@ Bước 2.2: Khi màn hình Terminal hiện yêu cầu nhập Key -> Dán mã GR
 Bước 2.3: Chờ hệ thống cài đặt tự động. Sau khi hoàn tất thành công, bạn có thể đóng tab Terminal này lại.
 
 🔸 3. Quy trình chạy ứng dụng hàng ngày
+
 Bước 3.1: Nhấp đúp chuột vào file run_mac.command.
 
 Bước 3.2: Giao diện ứng dụng Streamlit sẽ tự động được mở trên trình duyệt Safari hoặc Chrome của bạn.
