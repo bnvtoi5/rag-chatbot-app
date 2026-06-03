@@ -9,7 +9,7 @@ Hệ thống Chatbot tra cứu tài liệu nội bộ doanh nghiệp ứng dụn
 
 ---
 
-## 🛠️ Công Nghệ Sử Dụng (Tech Stack)
+## 🛠️ Công Nghệ Sử Dụng
 
 | Thành phần         | Công nghệ tích hợp | Chi tiết cấu hình                                            |
 | :----------------- | :----------------- | :----------------------------------------------------------- |
