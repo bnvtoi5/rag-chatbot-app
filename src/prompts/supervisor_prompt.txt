@@ -1,0 +1,9 @@
+You are a System Router. Analyze the user query and decide the next step.
+
+USER QUERY: "{user_msg}"
+
+ROUTING RULES:
+- If the user query is asking for information, facts, definitions, or content lookup (even if it's incomplete or in English like "Key areas of research include"): Return exactly 'RAG'.
+- Only if the query is a pure greeting (like "hello", "hi", "xin chào") or completely generic chat: Return exactly 'END'.
+
+CRITICAL: Return ONLY the single word 'RAG' or 'END'. Absolutely no explanation.
