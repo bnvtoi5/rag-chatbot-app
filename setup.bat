@@ -1,53 +1,58 @@
 @echo off
 title CAI DAT HE THONG RAG
-chcp 65001 > nul
 cls
 
+:: Ep Windows dung dung thu muc chua file .bat
+cd /d "%~dp0"
+
 echo ============================================================
-echo   BƯỚC 1: KHỞI TẠO MÔI TRƯỜNG VÀ CÀI ĐẶT THƯ VIỆN (1 LẦN DUY NHẤT)
+echo   BUOC 1: KHOI TAO MOI TRUONG VA CAI DAT (1 LAN DUY NHAT)
 echo ============================================================
 echo.
 
-:: 1. Kiểm tra Python
+:: 1. Kiem tra Python xem co ton tai khong
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo [LỖI] Không tìm thấy Python trên máy tính! Vui lòng cài đặt Python 3.10+.
-    pause
-    exit /b
-)
-
-:: 2. Khởi tạo venv
-if not exist .venv (
-    echo [*] Đang khởi tạo môi trường ảo Python (.venv)...
-    python -m venv .venv
-)
-
-:: 3. Kích hoạt venv
-call .venv\Scripts\activate
-
-:: 4. Nhập API Key
-if not exist .env (
-    echo ------------------------------------------------------------
-    set /p api_key="👉 Vui lòng nhập hoặc dán GROQ_API_KEY của bạn: "
-    echo GROQ_API_KEY=%api_key% > .env
-    echo [OK] Đã lưu cấu hình tài khoản!
-    echo ------------------------------------------------------------
+    echo [LOI] Khong tim thay Python tren may tinh! 
+    echo Vui long cai dat Python 3.10 tro len va tich chon "Add Python to PATH".
     echo.
-)
-
-:: 5. Cài đặt thư viện theo lệnh tối ưu của bạn
-echo [*] Đang cài đặt các thư viện văn bản (Vui lòng chờ)...
-pip install -r requirements.txt --no-cache-dir -v
-if %errorlevel% neq 0 (
-    echo [LỖI] Cài đặt thất bại! Vui lòng kiểm tra mạng.
     pause
     exit /b
 )
 
+:: 2. Khoi tao moi truong ao .venv
+echo [*] Dang khoi tao moi truong ao Python (.venv)...
+python -m venv .venv
+echo [OK] Da khoi tao xong thu muc .venv.
+echo.
+
+:: 3. Kich hoat moi truong ao
+echo [*] Dang kich hoat moi truong ao...
+call .venv\Scripts\activate.bat
+echo.
+
+:: 4. Nhap API Key va tao file .env
+echo ------------------------------------------------------------
+echo [CAU HINH] Thiet lap tai khoan cho lan dau su dung:
+set /p api_key="👉 Vui long nhap hoac dan GROQ_API_KEY cua ban: "
+echo GROQ_API_KEY=%api_key%>.env
+echo [OK] Da luu cau hinh vao file .env!
+echo ------------------------------------------------------------
+echo.
+
+:: 5. Ep buoc cai dat requirements (Dung pip cua chính venv)
+echo [*] Dang tien hanh cai dat cac thu vien (Buoc nay se chay hoi lau)...
+echo [*] Cac thong tin cai dat dang duoc tai ve...
+echo ------------------------------------------------------------
+
+.venv\Scripts\python.exe -m pip install --upgrade pip
+.venv\Scripts\python.exe -m pip install -r requirements.txt --no-cache-dir -v
+
+echo ------------------------------------------------------------
 echo.
 echo ============================================================
-echo [THÀNH CÔNG] Đã setup xong! Bạn có thể tắt file này.
-echo Từ bây giờ, bạn chỉ cần click file "2_Chay_Ung_Dung.bat" để dùng app.
+echo [THANH CONG] Da setup va cai dat xong toan bo thu vien!
+echo Gio ban co the tat file nay, nhap dup file "run.bat" de chay app chatbot.
 echo ============================================================
 echo.
 pause
