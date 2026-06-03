@@ -53,13 +53,14 @@ Hệ thống Chatbot tra cứu tài liệu nội bộ doanh nghiệp ứng dụn
 ├── run.bat / run_mac.command     # Script chạy ứng dụng nhanh 1-click
 └── requirements.txt     # Danh sách các thư viện phần mềm bắt buộc cài đặt
 
+```text
 ## 📥 Tải Mã Nguồn (Chung cho cả hai hệ điều hành)
 Tại trang GitHub này, bấm vào nút mã màu xanh Code (ở góc trên bên phải).
 
 Chọn Download ZIP.
 
 Sau khi tải xong, hãy giải nén file ZIP đó vào một thư mục trên máy tính của bạn.
-
+---
 ## 🪟 HƯỚNG DẪN CÀI ĐẶT & KHỞI CHẠY TRÊN WINDOWS
 ⚠️ Yêu cầu hệ thống: Máy tính cần cài đặt sẵn Python 3.10+ và bắt buộc phải tích chọn mục "Add Python to PATH" trong quá trình cài đặt.
 
