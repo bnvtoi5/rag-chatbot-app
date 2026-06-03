@@ -69,6 +69,7 @@ Sau khi tải xong, hãy giải nén file ZIP đó vào một thư mục trên m
 ⚠️ Yêu cầu hệ thống: Máy tính cần cài đặt sẵn Python 3.10+ và bắt buộc phải tích chọn mục "Add Python to PATH" trong quá trình cài đặt.
 
 🔹 1. Quy trình cài đặt lần đầu
+
 Bước 1.1: Truy cập vào thư mục dự án đã giải nén, tìm và nhấp đúp chuột vào file setup.bat.
 
 Bước 1.2: Màn hình console màu đen sẽ hiện ra -> Bạn hãy dán mã GROQ_API_KEY của mình vào -> Nhấn Enter.
