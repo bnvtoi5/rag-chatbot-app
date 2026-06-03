@@ -64,19 +64,22 @@ Sau khi tải xong, hãy giải nén file ZIP đó vào một thư mục trên m
 ---
 
 ## 🔑 Hướng dẫn tạo Groq API Key (Bắt buộc)
+
 Để hệ thống có thể kết nối với mô hình Llama 3.1, bạn cần một API Key miễn phí từ Groq:
 
-Truy cập vào trang: https://console.groq.com/
+  ❇️ Truy cập vào trang: https://console.groq.com/
+  
+  ❇️ Đăng ký tài khoản (bằng Google hoặc Email).
+  
+  ❇️ Tại menu bên trái, chọn mục API Keys.
+  
+  ❇️ Bấm vào nút Create API Key.
+  
+  ❇️ Đặt tên cho Key (tên gì cũng được, ví dụ: MyRAGKey) và bấm Submit.
+  
+  ❇️ Copy đoạn mã đó lại ngay lập tức (vì nó chỉ hiển thị một lần duy nhất).
 
-Đăng ký tài khoản (bằng Google hoặc Email).
-
-Tại menu bên trái, chọn mục API Keys.
-
-Bấm vào nút Create API Key.
-
-Đặt tên cho Key (tên gì cũng được, ví dụ: MyRAGKey) và bấm Submit.
-
-Copy đoạn mã đó lại ngay lập tức (vì nó chỉ hiển thị một lần duy nhất).
+⚠️ LƯU Ý: Tuyệt đối không chia sẻ API Key này cho bất kỳ ai. Bạn dán nó vào file .env trong thư mục dự án theo hướng dẫn cài đặt ở trên là xong!
 
 ---
 
