@@ -129,3 +129,45 @@ Bước 2.3: Chờ hệ thống cài đặt tự động. Sau khi hoàn tất th
 Bước 3.1: Nhấp đúp chuột vào file run_mac.command.
 
 Bước 3.2: Giao diện ứng dụng Streamlit sẽ tự động được mở trên trình duyệt Safari hoặc Chrome của bạn.
+
+---
+
+## 🚀 Hướng Dẫn Sử Dụng App
+Sau khi hệ thống đã khởi chạy thành công tại địa chỉ http://localhost:8501, bạn hãy thực hiện theo các bước sau để bắt đầu tra cứu:
+
+❇️ Bước 1: Import tài liệu vào app
+
+Tại thanh menu bên trái, nhấn vào nút "Upload Documents".
+
+Chọn các file tài liệu của bạn (PDF, Docx, hoặc Txt). Hệ thống sẽ tự động quét và phân tích nội dung.
+
+❇️ Bước 2: Thiết lập câu hỏi
+
+Tại khung chat chính, nhập câu hỏi hoặc yêu cầu cần tra cứu liên quan đến tài liệu đã nạp.
+
+Hệ thống với kiến trúc Multi-Agent sẽ tự động phân tích và tìm kiếm câu trả lời chính xác nhất.
+
+❇️ Bước 3: Nhận phản hồi
+
+Kết quả sẽ hiển thị ngay lập tức kèm theo nguồn trích dẫn từ tài liệu của bạn (đảm bảo tính minh bạch và độ tin cậy).
+
+💡 Mẹo: Bạn có thể hỏi theo ngôn ngữ tự nhiên (Tiếng Việt hoặc Tiếng Anh). Hệ thống sẽ tự động điều chỉnh ngữ cảnh phù hợp với nội dung doanh nghiệp của bạn.
+
+---
+
+## ⚙️ TỐI ƯU HÓA TÀI LIỆU (CHUNK SETTINGS)
+Để hệ thống đạt độ chính xác cao nhất, bạn có thể điều chỉnh các thông số kỹ thuật trong file cấu hình (hoặc tại thanh sidebar):
+
+❇️ Chunk Size (Kích thước đoạn cắt):
+
+Khuyên dùng: 500 - 1000 ký tự.
+
+Tại sao: Nếu quá lớn, mô hình dễ bỏ lỡ chi tiết; nếu quá nhỏ, ngữ cảnh có thể bị rời rạc. Hãy bắt đầu với 800 để có sự cân bằng tốt nhất.
+
+❇️ Chunk Overlap (Đoạn chồng lấp):
+
+Khuyên dùng: 10% - 20% của Chunk Size (khoảng 50 - 150).
+
+Tại sao: Việc giữ lại một phần nội dung ở cuối đoạn trước cho đoạn sau giúp mô hình duy trì ngữ cảnh xuyên suốt, tránh tình trạng thông tin bị cắt đứt giữa chừng.
+
+💡 Mẹo: Nếu tài liệu của bạn là văn bản pháp luật hoặc kỹ thuật nhiều thuật ngữ chuyên môn, hãy chọn Chunk Size nhỏ (khoảng 500) và Overlap lớn (khoảng 150) để đảm bảo tính liên kết tối đa.
