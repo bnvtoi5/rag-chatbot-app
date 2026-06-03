@@ -79,7 +79,7 @@ Sau khi tải xong, hãy giải nén file ZIP đó vào một thư mục trên m
   
   ❇️ Copy đoạn mã đó lại ngay lập tức (vì nó chỉ hiển thị một lần duy nhất).
 
-⚠️ LƯU Ý: Tuyệt đối không chia sẻ API Key này cho bất kỳ ai. Bạn dán nó vào file .env trong thư mục dự án theo hướng dẫn cài đặt ở trên là xong!
+⚠️ LƯU Ý: Tuyệt đối không chia sẻ API Key này cho bất kỳ ai. Bạn dán nó vào Terminal lúc chạy file setup.bat hoặc setup_mac.command là được.
 
 ---
 
