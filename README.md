@@ -1,6 +1,4 @@
-# -_- coding: utf-8 -_-
-
-content = """# Enterprise Multi-Agent RAG System 🤖📦
+# Enterprise Multi-Agent RAG System 🤖📦
 
 Hệ thống Chatbot tra cứu tài liệu nội bộ doanh nghiệp ứng dụng kiến trúc Đa tác nhân (Multi-Agent Workflow) qua **LangGraph**, lưu trữ vector cục bộ bằng **ChromaDB**, và vận hành tối ưu trên phần cứng văn phòng (**RAM 8GB**).
 
@@ -65,7 +63,24 @@ Sau khi tải xong, hãy giải nén file ZIP đó vào một thư mục trên m
 
 ---
 
-## 🪟 HƯỚNG DẪN CÀI ĐẶT & KHỞI CHẠY TRÊN WINDOWS
+## 🔑 Hướng dẫn tạo Groq API Key (Bắt buộc)
+Để hệ thống có thể kết nối với mô hình Llama 3.1, bạn cần một API Key miễn phí từ Groq:
+
+Truy cập vào trang: https://console.groq.com/
+
+Đăng ký tài khoản (bằng Google hoặc Email).
+
+Tại menu bên trái, chọn mục API Keys.
+
+Bấm vào nút Create API Key.
+
+Đặt tên cho Key (tên gì cũng được, ví dụ: MyRAGKey) và bấm Submit.
+
+Copy đoạn mã đó lại ngay lập tức (vì nó chỉ hiển thị một lần duy nhất).
+
+---
+
+## 🪟 Hướng Dẫn Cài Đặt & Khởi Chạy Trên Windows
 ⚠️ Yêu cầu hệ thống: Máy tính cần cài đặt sẵn Python 3.10+ và bắt buộc phải tích chọn mục "Add Python to PATH" trong quá trình cài đặt.
 
 🔹 1. Quy trình cài đặt lần đầu
@@ -84,7 +99,7 @@ Bước 2.2: Hệ thống sẽ khởi động nền tảng Web và tự động 
 
 ---
 
-## 🍏 HƯỚNG DẪN CÀI ĐẶT & KHỞI CHẠY TRÊN MACOS
+## 🍏 Hướng Dẫn Cài Đặt & Khởi Chạy Trên MacOS
 ⚠️ Yêu cầu hệ thống: Máy tính cần cài đặt sẵn Python 3.10+.
 
 🔸 1. Cấp quyền thực thi file (Bắt buộc làm lần đầu)
@@ -94,8 +109,10 @@ Bước 1.1: Mở ứng dụng Terminal trên máy Mac.
 
 Bước 1.2: Gõ lệnh cd <dấu cách> Kéo và thả thư mục dự án của bạn vào cửa sổ Terminal -> Nhấn Enter.
 
-Bước 1.3: Gõ lệnh trong terminal này và ấn Enter: chmod +x setup_mac.command run_mac.command
-
+Bước 1.3: Nhập lệnh trong terminal: 
+```bash
+chmod +x setup_mac.command run_mac.command
+```
 🔸 2. Quy trình cài đặt lần đầu
 
 Bước 2.1: Nhấp đúp chuột vào file setup_mac.command.
@@ -109,4 +126,3 @@ Bước 2.3: Chờ hệ thống cài đặt tự động. Sau khi hoàn tất th
 Bước 3.1: Nhấp đúp chuột vào file run_mac.command.
 
 Bước 3.2: Giao diện ứng dụng Streamlit sẽ tự động được mở trên trình duyệt Safari hoặc Chrome của bạn.
-```
