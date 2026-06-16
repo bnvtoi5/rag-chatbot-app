@@ -1,13 +1,8 @@
-from langchain_qdrant import QdrantVectorStore
-from qdrant_client import QdrantClient
+def get_vector_store():
+    embeddings = get_embedding_model()
 
-client = QdrantClient(
-    url=Config.QDRANT_URL,
-    api_key=Config.QDRANT_API_KEY,
-)
-
-vectorstore = QdrantVectorStore(
-    client=client,
-    collection_name="enterprise_rag_db",
-    embedding=get_embedding_model()
-)
+    return Chroma(
+        collection_name="enterprise_rag_db",
+        embedding_function=embeddings,
+        persist_directory=Config.CHROMA_DIR
+    )
